@@ -1,4 +1,4 @@
-package com.chen.ellen.basemvp.model;
+package com.chen.ellen.basemvp.view;
 
 import android.support.v7.app.AppCompatActivity;
 
