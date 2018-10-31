@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="AutoView">
+
+        <!--这里是一个String类型的自定义属性-->
+        <attr name="text" format="string"/>
+        <!--这里是一个dimension尺寸类型的自定义属性-->
+        <attr name="value" format="dimension"/>
+
+
+    </declare-styleable>
+
+
+
+</resources>
