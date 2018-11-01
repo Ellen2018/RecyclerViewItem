@@ -59,7 +59,7 @@ public class LoginActivity extends BaseActivity<LoginAgreement.AgreementPresente
 
                 int hasWriteStoragePermission = ContextCompat.checkSelfPermission(getApplication(), Manifest.permission.CAMERA);
                 if (hasWriteStoragePermission == PackageManager.PERMISSION_GRANTED) {
-                    //拥有权限，执行操作
+                    //拥有权限，则执行操作
                     Intent openCameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                     file = new File(getExternalCacheDir(), System.currentTimeMillis()+".jpg");
 
