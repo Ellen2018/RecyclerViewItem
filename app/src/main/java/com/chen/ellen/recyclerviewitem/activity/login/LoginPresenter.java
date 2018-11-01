@@ -2,6 +2,8 @@ package com.chen.ellen.recyclerviewitem.activity.login;
 
 import android.util.Log;
 
+import javax.inject.Inject;
+
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
@@ -11,6 +13,12 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
 public class LoginPresenter extends LoginAgreement.AgreementPresenter {
+
+
+    @Inject
+    public LoginPresenter(){
+        super();
+    }
 
 
     @Override
