@@ -161,7 +161,7 @@ public class LoginActivity extends BaseActivity<LoginAgreement.AgreementPresente
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
                     //用户同意，执行操作
                     Intent openCameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                    File file = new File(getExternalCacheDir(), System.currentTimeMillis()+".jpg");
+                    file = new File(getExternalCacheDir(), System.currentTimeMillis()+".jpg");
 
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
                         openCameraIntent.putExtra(MediaStore.EXTRA_OUTPUT,
